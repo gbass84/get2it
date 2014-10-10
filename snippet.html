@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>get2it</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="javascript/jquery-1.9.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+<div id="footer">
+<div class="col3">
+    Cat Pictures
+</form>
+
+</div>
+<div class="col6 last">
+    <div id="g2iWrapper">
+        <div class="row" id="g2iPanelWrapper">
+            <div id="g2iDir" class="g2iViewPanel" name="getDir">
+                <div id="directions-panel" class="innerPanel"></div>
+            </div>
+            <div id="g2iMap" class="g2iViewPanel shown" name="getMap">
+                <div id="map-panel" class="innerPanel"></div>
+            </div>
+            <div id="g2iStartPoint" class="g2iViewPanel" name="getStart">
+                <div id="start-panel" class="innerPanel">
+                    <form id="g2iStartPointForm">
+                        <div class="col6">
+                            <div class="row">
+                                <label for="g2iStreet">Street</label>
+                            </div>
+                            <div class="row">
+                                <input id="g2iStreet" type="text"/>
+                            </div>
+                            <div class="row">
+                                <label for="g2iCity">City</label>
+                            </div>
+                            <div class="row">
+                                <input id="g2iCity" type="text"/>
+                            </div>
+                            <div class="row">
+                                <label for="g2iState">State</label>
+                            </div>
+                            <div class="row">
+                                <input id="g2iState" type="text"/>
+                            </div>
+                            <div class="row">
+                                <label for="g2iZip">Zip</label>
+                            </div>
+                            <div class="row">
+                                <input id="g2iZip" type="text"/>
+                            </div>
+                        </div>
+                        <div class="col6">
+                            <a class="button" id="updateStart">Try Again</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row col12 last center" id="g2iControls">
+            <a id="getMap" class="mControl button" data-panel="#g2iMap">Map View</a>
+            <a id="getDir" class="mControl button" data-panel="#g2iDir">Directions</a>
+            <a id="getStart" class="mControl button" data-panel="#g2iStartPoint">Starting Point</a>
+        </div>
+    </div>
+</div>
+<div class="col3">
+</div>
+
+</div>
+</body>
+</html>
