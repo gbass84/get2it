@@ -1,0 +1,141 @@
+#g2iWrapper {
+    display: block;
+    position: relative;
+    border: solid 2px #aaa;
+    background: #dedede;
+    border-radius: 2px;
+    max-width: 400px;
+}
+.g2iViewPanel {
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+    opacity: 0;
+}
+#g2iPanelWrapper {
+    position: relative;
+    height: 250px;
+}
+#g2iStartPoint {
+    padding: .5em 1em;
+}
+#g2iStartPointForm {
+    font-size: 1.125em;
+}
+#g2iStartPointForm input {
+    font-size: 16px;
+    line-height: 20px;
+    color: #6d6d6d;
+    border-radius: 2px;
+    border: solid 1px #aaa;
+    width: 100%;
+}
+#g2iStartPointForm label {
+    font-family: sans-serif;
+    font-size: 1.25em;
+    color: #6d6d6d;
+}
+#g2iStartPointForm #updateStart {
+}
+#g2iControlWrapper {
+    text-align: center;
+}
+.innerPanel {
+    height: 250px;
+}
+#g2iDir {
+    overflow: auto;
+}
+#panel {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -180px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+}
+.adp-directions {
+    width: 100%;
+}
+#map-panel {
+
+}
+#g2iControls  {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+.shown {
+    display: block;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+.button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: linear-gradient(#f0f0f0,#ccc);
+    color: #6d6d6d;
+    text-shadow: 1px 1px 1px #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    border-radius: 2px;
+    border: solid 1px #aaa;
+    width: 32%;
+    max-width: 200px;
+}
+.button:hover, .button.active {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: linear-gradient(#6d6d6d,#666);
+    color: #fff;
+    text-shadow: 1px 1px 1px #3d3d3d;
+    border: solid 1px #3d3d3d;
+    width: 32%;
+    max-width: 200px;
+}
+/**** Minimal Grid Style ****/
+.col3, .col6, .col12 {
+    float: left;
+    padding: 0 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.col3 {
+    width: 25%;
+}
+.col6 {
+    width: 50%;
+}
+.col12 {
+    width: 100%;
+}
+.row {
+    display: block;
+    width: 100%;
+}
+.row:before, .row:after {
+    display: table-cell;
+    height: 1px;
+    clear: both;
+    content: ' ';
+}
+/***** Print Styles ****/
+@media print {
+    #map-canvas {
+        height: 500px;
+        margin: 0;
+    }
+
+    #directions-panel {
+        float: none;
+        width: auto;
+    }
+}
